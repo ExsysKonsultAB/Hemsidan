@@ -74,7 +74,7 @@
               -->
             </li>
             <li><a href="#portfolio">Projekt</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="">Support</a></li>
             <!--
               <li class="menu-has-children"><a href="">Drop Down</a>
                 <ul>
@@ -116,7 +116,7 @@
           <div class="carousel-content">
             <h2>Effektiviserar IT på riktigt</h2>
             <p>
-              Lägger ni in samma information flera system, saknar ni en
+              Lägger ni in samma information i flera system, saknar ni en
               applikation eller stödsystem idag som inte finns eller behöver ni
               hjälp med att lägga upp en strategi för er IT-plattform?
             </p>
@@ -363,8 +363,6 @@
                 exempelvis: Fortnox, Visma, Next mfl.
               </p>
             </div>
-         
-       
 
             <div
               class="col-lg-4 col-md-6 box wow bounceInUp"
@@ -559,7 +557,8 @@
                     ><i class="ion ion-eye"></i
                   ></a>
                   <a
-                    href="projekteasyway.html"
+                    data-toggle="modal" 
+                    data-target="#myModalEasy"
                     class="link-details"
                     title="More Details"
                     ><i class="ion ion-android-open"></i
@@ -567,7 +566,7 @@
                 </figure>
 
                 <div class="portfolio-info">
-                  <h4><a href="projekteasyway.html">EasyWay Travel</a></h4>
+                  <h4><a data-toggle="modal" data-target="#myModalEasy">EasyWay Travel</a></h4>
                   <p>Web</p>
                 </div>
               </div>
@@ -593,7 +592,8 @@
                     ><i class="ion ion-eye"></i
                   ></a>
                   <a
-                    href="projektrgmp.html"
+                    data-toggle="modal" 
+                    data-target="#myModalRGMP"
                     class="link-details"
                     title="More Details"
                     ><i class="ion ion-android-open"></i
@@ -601,7 +601,7 @@
                 </figure>
 
                 <div class="portfolio-info">
-                  <h4><a href="projektrgmp.html">RG Marknadspartner</a></h4>
+                  <h4><a data-toggle="modal" data-target="#myModalRGMP">RG Marknadspartner</a></h4>
                   <p>Web</p>
                 </div>
               </div>
@@ -626,13 +626,13 @@
                     title="Preview"
                     ><i class="ion ion-eye"></i
                   ></a>
-                  <a href="#" class="link-details" title="More Details"
+                  <a data-toggle="modal" data-target="#myModalMazars" class="link-details" title="More Details"
                     ><i class="ion ion-android-open"></i
                   ></a>
                 </figure>
 
                 <div class="portfolio-info">
-                  <h4><a href="projektmazars.html">Mazars</a></h4>
+                  <h4><a data-toggle="modal" data-target="#myModalMazars">Mazars</a></h4>
                   <p>Integration</p>
                 </div>
               </div>
@@ -657,7 +657,8 @@
                     ><i class="ion ion-eye"></i
                   ></a>
                   <a
-                    href="projektrockit.html"
+                    data-toggle="modal" 
+                    data-target="#myModalRockIT"
                     class="link-details"
                     title="More Details"
                     ><i class="ion ion-android-open"></i
@@ -665,7 +666,7 @@
                 </figure>
 
                 <div class="portfolio-info">
-                  <h4><a href="projektrockit.html">RockIT Sales</a></h4>
+                  <h4><a data-toggle="modal" data-target="#myModalRockIT">RockIT Sales</a></h4>
                   <p>Web</p>
                 </div>
               </div>
@@ -687,7 +688,8 @@
                     ><i class="ion ion-eye"></i
                   ></a>
                   <a
-                  data-toggle="modal" data-target="#myModalLans"
+                    data-toggle="modal"
+                    data-target="#myModalLans"
                     class="link-details"
                     title="More Details"
                     ><i class="ion ion-android-open"></i
@@ -695,7 +697,11 @@
                 </figure>
 
                 <div class="portfolio-info">
-                  <h4><a data-toggle="modal" data-target="#myModalLans">Länsförsäkringar</a></h4>
+                  <h4>
+                    <a data-toggle="modal" data-target="#myModalLans"
+                      >Länsförsäkringar</a
+                    >
+                  </h4>
                   <p>Klient</p>
                 </div>
               </div>
@@ -717,7 +723,8 @@
                     ><i class="ion ion-eye"></i
                   ></a>
                   <a
-                    href="projekttagkomp.html"
+                    data-toggle="modal" 
+                    data-target="#myModalTagkomp"
                     class="link-details"
                     title="More Details"
                     ><i class="ion ion-android-open"></i
@@ -725,32 +732,181 @@
                 </figure>
 
                 <div class="portfolio-info">
-                  <h4><a href="projekttagkomp.html">Tågkompaniet/NSB</a></h4>
+                  <h4>
+                    <a data-toggle="modal" 
+                    data-target="#myModalTagkomp">Tågkompaniet/NSB</a></h4>
                   <p>Integration</p>
                 </div>
               </div>
             </div>
-            
+
             <!-- Modal -->
-            <div id="myModalLans" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-            
+
+            <div id="myModalEasy" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h4 class="modal-title">EasyWay Travel</h4>
                   </div>
                   <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <div class="container">
+                        <p>
+                            Bokningssystem till EasyWay Travel. Systemet är utvecklat
+                            i ASP.Net/SQL Server och används för att kunden själv ska
+                            kunna boka transfer, utflykter och resor via easyway.se.
+                            EasyWay.se har ett avancerat administrationsgränssnitt så
+                            att personal på Easyway kan administrera allt från
+                            sidoinnehåll, bokningar, resmål/transfer, priser mm.
+                          </p>
+                    </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
-            
               </div>
             </div>
+
+            <div id="myModalRGMP" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h4 class="modal-title">RG Marknadspartner</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                        <p>Bokningssystem för RG Marknadspartner. Systemet är utvecklat i Microsoft.Net och består av en webbportal som används för att kunderna ska kunna boka uppdrag via webbportalen samt följa uppdragsstatus. Portalen används även av personalen på RG för att se schema, tidrapport och återrapport av genomfört uppdrag. I tilläg till webbportalen avänder administrativ personal en Remote App för all administraring av systemet som masterdata, följesedlar och löneunderlag.</p>
+                    </div>
+                    </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="myModalMazars" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h4 class="modal-title">Mazars</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <p>
+                        xxx
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="myModalRockIT" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                      <h4 class="modal-title">RockIT</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <p>
+                            Projekthanteringssystem med administrativ del utvecklad som remote APP samt en webbaserad kundportal som används för kundernas användare.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="myModalLans" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body"><p>Some text in the modal.</p></div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="myModalTagkomp" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                      <h4 class="modal-title">Svenska Tågkompaniet</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <p>
+                          NSBKonvertering, Används för att föra över Tågkompaniets bokföring till NSB (Norges statsbaner).
+                        </p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <!--
               <div class="col-lg-4 col-md-6 portfolio-item filter-integration wow fadeInUp">
                 <div class="portfolio-wrap">
@@ -1032,12 +1188,16 @@
               <div class="contact-email">
                 <i class="ion-ios-email-outline"></i>
                 <h3>Email</h3>
-                <p><a href="mailto:infoq@qexsys.se" onmouseover="this.href=this.href.replace(/q/g,'');">info(at)exsys(dot)se</a></p>
+                <p>
+                  <a
+                    href="mailto:infoq@qexsys.se"
+                    onmouseover="this.href=this.href.replace(/q/g,'');"
+                    >info(at)exsys(dot)se</a
+                  >
+                </p>
               </div>
             </div>
           </div>
-
-          
 
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -1093,8 +1253,11 @@
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                  <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-                  <div class="validation"></div>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                ></div>
+                <div class="validation"></div>
               </div>
               <div class="text-center">
                 <button type="submit" value="submit">Skicka meddelande</button>
